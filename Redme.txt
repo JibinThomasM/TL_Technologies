@@ -5,8 +5,8 @@ The datase is created in an mssms 2019 with sql server vertion 15.
 What is in the file?
 
     I have created Database and named it as # TL_Technologies. Which consists of two tables, one is #Customer_Table and the other one is # Order_Source.
-The customer_table contains the columns which are Customer_Id(primary key), Customer_Name, Customer_Address, Customer_Phone(unique key). 
-The Order_Source contains the columns which are Order_Id(primary key), Order_Date, Total_Order, Customer_Id(foreign key).
+The customer_table contains the columns which are Customer_Id(primary key), Customer_Name, Customer_Address, Customer_Phone(unique key). The Order_Source contains 
+the columns which are Order_Id(primary key), Order_Date, Total_Order, Customer_Id(foreign key).
 Stored Procedure are created for insert,update,delete, and read operations in both tables. 
 
 
