@@ -28,3 +28,7 @@ Common Table Expression.
 
     Common Table Expression(CTE) is implemented inside a stored procedure named #CustomersOrderDetails. By using this CTE we can get customer names and their total orders. 
     We can execute the stored procedure #CustomersOrderDetails without inputing any parameter and it shows all Customer_Name with Total_Order.
+    
+    
+    
+    
