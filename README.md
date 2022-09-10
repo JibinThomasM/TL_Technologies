@@ -1,1 +1,27 @@
-# TL_Technologies
+I am attaching the sql script file for Basic CRM test in this repository.
+The datase is created in an mssms 2019 with sql server vertion 15.
+
+
+What is in the file?
+
+    I have created Database and named it as # TL_Technologies. Which consists of two tables, one is #Customer_Table and the other one is # Order_Source.
+The customer_table contains the columns which are Customer_Id(primary key), Customer_Name, Customer_Address, Customer_Phone(unique key). The Order_Source contains the columns which are Order_Id(primary key), Order_Date, Total_Order, Customer_Id(foreign key).
+    Stored Procedure are created for insert,update,delete, and read operations in both tables. 
+    
+Name of stored procedures and its usage.
+
+    spInsertCustomer - This stored procedure is for inserting rows into customer_table. Which takes Customer_Name, Customer_Address, Customer_Phone as                                          parameters.
+    spUpdateCutomer - This stored procedure is for updating customer_table. Which takes Customer_Name, Customer_Address, Customer_Phone as parameters.
+    spDeleteCustomer - This stored procedure is for deleting customer_table. Which takes Customer_Id as parameter for deleting that purticular row.
+    spGetCustomer - This stored procedure is for reading the customer_table. Which takes Customer_Id as parameter for selecting that purticular row.
+    spInsertOrder - This stored procedure is for inserting rows into Order_Source table.Which takes Order_Date, Total_Order, Customer_Id as parameters.
+    spUpdateOrder - This stored procedure is for Updating Order_Source table. Which takes Order_Date, Total_Order, Customer_Id as parameters.
+    spDeleteOrder - This stored procedure is for deleting Order_Source table. Which takes Order_Id as parameter for deleting that purticular row.
+    spGetOrder - This stored procedure is for reading the Order_Source table. Which takes Order_Id as parameter for selecting that purticular row.
+    
+    
+    
+Common Table Expression.
+
+    Common Table Expression(CTE) is implemented inside a stored procedure named #CustomersOrderDetails. By using this CTE we can get customer names and their total orders. 
+    We can execute the stored procedure #CustomersOrderDetails without inputing any parameter and it shows all Customer_Name with Total_Order.
